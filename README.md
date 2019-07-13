@@ -15,4 +15,12 @@ This is a discord bot that gets player information (mainly from CS:GO) using Ste
 
 `!csgopistol [ct or t]` - tells you a random pistol to use depending on which side you are on
 
-`players [tf2, csgo, or dota2]` - shows the amount of payers playing the respective game.
+<img src="images/!csgopistolCT.PNG">
+
+<img src="images/!csgopistolT.PNG">
+
+`!players [tf2, csgo, or dota2]` - shows the amount of payers playing the respective game.
+
+<img src="images/!playersTF2">
+
+`!help` - shows user list of commands
