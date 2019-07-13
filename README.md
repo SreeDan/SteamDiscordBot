@@ -21,6 +21,12 @@ This is a discord bot that gets player information (mainly from CS:GO) using Ste
 
 `!players [tf2, csgo, or dota2]` - shows the amount of payers playing the respective game.
 
-<img src="images/!playersTF2">
+<img src="images/!playersTF2.PNG">
+
+<img src="images/!playersCSGO.PNG">
+
+<img src="images/!playersDOTA2.PNG">
 
 `!help` - shows user list of commands
+
+<img src="images/!help.PNG">
