@@ -18,8 +18,7 @@ def read_key():
 token = read_token()
 key = read_key()
 client = discord.Client()
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@client.event
+
 
 async def on_message(message):
     user = f"{message.author.name}"
@@ -180,10 +179,9 @@ async def on_message(message):
                 embed.set_thumbnail(url="https://www.publicdomainpictures.net/pictures/40000/nahled/question-mark.jpg")
                 await message.channel.send(embed=embed)
                 # Because steam changed their privacy settings, go into your profile settings and make everything public
-#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    if message.content.find("!online") != -1:
-        await message.channel.send("Hello " + user)
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        await message.channel.send("Hello " + user + ", I am online!")
+
     if message.content.find("!playerbans") != -1:
         vanity_id = message.content[12:]
         url_id = "http://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/?key=" + key + "&vanityurl=" + str(vanity_id)
@@ -304,7 +302,7 @@ async def on_message(message):
                         await message.channel.send(embed=embed)
             else:
                 await message.channel.send("Servers are down!")
-# -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
     if message.content.find("!csgopistol") != -1:
         team = message.content[12:]
         user_uses = user + ", you should use the "
@@ -343,8 +341,7 @@ async def on_message(message):
                 await message.channel.send(user_uses + "**Desert Eagle (Deagle)**!")
             if randpistol == 7:
                 await message.channel.send(user_uses + "**Revolver**!")
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    if message.content.find("!players") != -1:
+
         game = message.content[9:]
         if game == "tf2":
             players_url = "http://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=440"
@@ -385,7 +382,6 @@ async def on_message(message):
         else:
             await message.channel.send("Please enter the game (tf2, csgo, or dota2) after the command!")
 
-# -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     if message.content.find("!help") != -1:
         embed = discord.Embed(title=user + ", Here you go!\n\n**Help**",
                               color=discord.Colour.orange())
@@ -393,13 +389,10 @@ async def on_message(message):
                         "!**csgostats [steam id (custom or not)]** - views player's CS:GO stats\n"
                         "!**online** - sees if I am online\n"
                         "!**playerbans [steam id (custom or not)]** - views how many bans a player has\n"
-                        "!**csgopistol [ct or t]** - gives you random pistol to use depending on which side you are on\n"
-                        "!**players [tf2, csgo, or dota2]** - shows the amount of players playing CS:GO", inline=False)
+                        "!**csgopistol [ct or t]** - tells you random pistol to use depending on which side you are on\n"
+                        "!**players [tf2, csgo, or dota2]** - shows the amount of players playing the respective game", inline=False)
                         # Added 4 stars to start the bold characters and end it again. Specifically did this so the bot woud not think this was a command.
         await message.channel.send(embed=embed)
-
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 
 
 client.run(token)
