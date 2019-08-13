@@ -1,6 +1,13 @@
 # SteamDiscordBot
 This is a discord bot that gets player information (mainly from CS:GO) using Steam's API services. This bot takes user input such as a player's steam id, CS:GO team, and game name.
 
+You can get a Steam API key [here](https://steamcommunity.com/dev/apikey).
+
+You can create a Discord Bot [here](https://discordapp.com/login?redirect_to=%2Fdevelopers%2Fapplications%2F)
+
+Follow the directions [here](https://support.discordapp.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) to get the id.
+
+
 `!csgostats [steam id (custom or not)]` - views plaer's CS:GO stats
 
 <img src="images/!csgostats.PNG" width="700">
@@ -30,3 +37,7 @@ This is a discord bot that gets player information (mainly from CS:GO) using Ste
 `!help` - shows user list of commands
 
 <img src="images/!help.PNG">
+
+# Setup
+
+In each of the text files, delete everything and put in your information. For example, I would open up the token.txt and put in my token.
