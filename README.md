@@ -1,5 +1,5 @@
 # SteamDiscordBot
-This is a discord bot that gets player information (mainly from CS:GO) using Steam's API services. This bot takes user input such as a player's steam id, CS:GO team, and game name.
+This is a discord bot that gets player information (mainly from CS:GO) using Steam's API services. This bot takes user input such as a player's steam id, CS:GO team, and game name. When giving the bot your id, you can use your custom id or your SteamID64. Regardless of which one you use, the bot will work the same.
 
 You can get a Steam API key [here](https://steamcommunity.com/dev/apikey).
 
